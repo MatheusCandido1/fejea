@@ -270,7 +270,7 @@
                                 <div class="account-wrap">
                                     <div class="account-item clearfix js-item-menu">
                                         <div class="image">
-                                            <img src="images/icon/avatar-01.jpg" alt="John Doe" />
+                                            <img src="https://media-exp1.licdn.com/dms/image/C4E0BAQFqI6dhSfAjkg/company-logo_200_200/0?e=2159024400&v=beta&t=LexJE8WuE70GwqbfIoC_-ycGcXmLw82_xHNvuL1ByR8" alt="John Doe" />
                                         </div>
                                         <div class="content">
                                             <a class="js-acc-btn" href="#">FEJEA</a>
