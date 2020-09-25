@@ -9,10 +9,10 @@
                     <strong>Ranking</strong>
                     <small> Quem tá mandando bem?!</small>
                 </div>
-                <div class="card-body">
-                       <div class="overview-item overview-item--c2">
-                <div class="overview__inner">
-                    <div class="overview-box clearfix">
+                <div  class="card-body">
+                       <div   style="align-items: center; justify-content: center; background-color: #00133d" class="overview-item ">
+                <div  class="overview__inner">
+                    <div  class="overview-box clearfix">
                        <div class="icon">
                             <i class="fa fa-trophy"></i>
                         </div>
@@ -135,7 +135,7 @@
                     
                     
                       <div>
-                            <button id="payment-button" type="submit" class="btn btn-lg  btn-secondary btn-block" style="background-color: #d1063a;">
+                            <button id="payment-button" type="submit" class="btn btn-lg  btn-secondary btn-block" style="background-color: #00133d">
                                 <i class="fa fa-rocket fa-lg"></i>&nbsp;
                                 <span id="payment-button-amount" style="color: white">Conectar</span>
                                 <span id="payment-button-sending" style="display:none;">Enviando...</span>
