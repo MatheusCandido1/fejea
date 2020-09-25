@@ -62,9 +62,6 @@
                         </li>
                         
                         <li>
-                            <a href="/">
-                                <i class="fas fa-table"></i>Leads</a>
-                        </li>
                     </ul>
                 </div>
             </nav>
@@ -85,10 +82,6 @@
                             <a href="/">
                                 <i class="fas fa-home"></i>Início</a>
                         </li>
-                        <li>
-                            <a href="/">
-                                <i class="fas fa-table"></i>Leads</a>
-                        </li>
                     </ul>
                 </nav>
             </div>
@@ -104,12 +97,13 @@
                         <div class="header-wrap">
                             <form class="form-header" action="" method="POST" >
                                 <input disabled class="au-input au-input--xl" type="text" name="search" placeholder="Em breve..." />
-                                <button style="background-color: #00133d;" class="au-btn--submit" type="submit">
+                                <button disabled style="background-color: #00133d;" class="au-btn--submit" type="submit">
                                     <i class="zmdi zmdi-search"></i>
                                 </button>
                             </form>
                             <div class="header-button">
                                 <div class="noti-wrap">
+                                    
                                     <div class="noti__item js-item-menu">
                                         <i class="zmdi zmdi-comment-more"></i>
                                         <span style="background-color:#6e1112;" class="quantity" >1</span>
@@ -211,6 +205,13 @@
                     </div>
                 </div>
             </div>  
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="copyright">
+                        <p>Copyright © 2018 Colorlib. Direitos Reservado. Adaptado com ❤️ por <a href="https://www.instagram.com/candin/">Candin</a>.</p>
+                    </div>
+                </div>
+            </div>
             
             <script src="{{ asset('vendor/jquery-3.2.1.min.js')}}"></script>
     <!-- Bootstrap JS-->
@@ -219,6 +220,10 @@
     <!-- Vendor JS       -->
     <script src="{{ asset('vendor/slick/slick.min.js')}}">
     </script>
+    <script src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.datatables.net/1.10.20/js/dataTables.bootstrap4.min.js" crossorigin="anonymous"></script>
+    <script src="{{ asset('template/assets/demo/datatables-demo.js') }}"></script>
+
     <script src="{{ asset('vendor/wow/wow.min.js')}}"></script>
     <script src="{{ asset('vendor/animsition/animsition.min.js')}}"></script>
     <script src="{{ asset('vendor/bootstrap-progressbar/bootstrap-progressbar.min.js')}}">

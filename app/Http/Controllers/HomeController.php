@@ -27,6 +27,7 @@ class HomeController extends Controller
         ->join('ej', 'connected.id_ej','=','ej.id')
         ->first();
 
+       
         $sum = 0;
         for($i = 1; $i < 5; $i++){
             

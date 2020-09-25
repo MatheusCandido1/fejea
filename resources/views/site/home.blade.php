@@ -3,6 +3,7 @@
 <br/>
 <div class="container-fluid">
     <div class="row">
+          
         <div class="col-lg-6">
             <div class="card">
                  <div class="card-header">
@@ -64,6 +65,8 @@
                 <div class="card-header">
                     <small>Vou te passar um</small>
                     <strong> Contatinho!</strong>
+                <a href="{{route('connected.export')}}" style="color: white" class="btn btn-success float-right btn-sm">
+                        Exportar Leads <i class="fas fa-file-excel"></i></a>
                 </div>
                 <div class="card-body card-block">
                 <form method="POST" action="{{ route('connected.store')}}">
@@ -86,7 +89,7 @@
                                    <select name="id_ej1" id="ej1" class="form-control" tabindex="-1" aria-hidden="true">
                                        <option value="">Selecione..</option>
                                        @foreach($ejs as $ej)
-                                           <option value="{{$ej->id}}">{{$ej->name}}</option>
+                                           <option value="{{$ej->name}}">{{$ej->name}}</option>
                                        @endforeach
                                    </select>
                            </div>
@@ -101,7 +104,7 @@
     <select name="id_ej2" id="ej2" class="form-control" tabindex="-1" aria-hidden="true">
         <option value="">Selecione..</option>
         @foreach($ejs as $ej)
-            <option value="{{$ej->id}}">{{$ej->name}}</option>
+            <option value="{{$ej->name}}">{{$ej->name}}</option>
         @endforeach
     </select>
                         </div>
@@ -109,7 +112,7 @@
                             <select name="id_ej3" id="ej3" class="form-control" tabindex="-1" aria-hidden="true">
                                 <option value="">Selecione..</option>
                                 @foreach($ejs as $ej)
-                                    <option value="{{$ej->id}}">{{$ej->name}}</option>
+                                    <option value="{{$ej->name}}">{{$ej->name}}</option>
                                 @endforeach
                             </select>
                                                 </div>
@@ -117,7 +120,7 @@
                                                     <select name="id_ej4" id="ej4" class="form-control" tabindex="-1" aria-hidden="true">
                                                         <option value="">Selecione..</option>
                                                         @foreach($ejs as $ej)
-                                                            <option value="{{$ej->id}}">{{$ej->name}}</option>
+                                                            <option value="{{$ej->name}}">{{$ej->name}}</option>
                                                         @endforeach
                                                     </select>
                                                                         </div>
