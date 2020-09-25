@@ -66,47 +66,60 @@
                     <strong> Contatinho!</strong>
                 </div>
                 <div class="card-body card-block">
-                    <form method="POST" action="lead.php">
+                    <form method="POST" action="">
                      <div class="form-group">
-                            <label for="street" class=" form-control-label ">Qual sua EJ?</label>
-                                <select name="ej" id="ej" class="form-control js-example-basic-single select2-hidden-accessible" tabindex="-1" aria-hidden="true">
-                                    <option value="0">Selecione...</option>
-                                                                <option value="4">AEC</option>                             <option value="10">Batuque</option>                             <option value="20">Consulti</option>                             <option value="18">EJEC</option>                             <option value="3">Executive</option>                             <option value="13">I9 Engenharia</option>                             <option value="9">Jangadeiros</option>                             <option value="19">JRS Consultoria</option>                             <option value="21">Júnior Legis</option>                             <option value="16">Nortear</option>                             <option value="12">PontesJud</option>                             <option value="7">Potencialize</option>                             <option value="6">ProSigma</option>                             <option value="17">PROTEQ</option>                             <option value="14">Renotec</option>                             <option value="8">Sapiência</option>                             <option value="15">Sigma</option>                             <option value="5">TIJUC</option>                             <option value="11">Vetor</option>                             <option value="2">Vittals</option>                                                     </select><span class="select2 select2-container select2-container--default" dir="ltr" style="width: 422.5px;"><span class="selection"><span class="select2-selection select2-selection--single" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-labelledby="select2-ej-container"><span class="select2-selection__rendered" id="select2-ej-container" title="Selecione...">Selecione...</span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span>
+                     <label for="street" class=" form-control-label ">Qual sua EJ?</label>
+                                <select name="ej" id="ej" class="form-control" tabindex="-1" aria-hidden="true">
+                                    <option value="">Selecione..</option>
+                                    @foreach($ejs as $ej)
+                                        <option value="{{$ej->id}}">{{$ej->name}}</option>
+                                    @endforeach
+                                </select>
                         </div>
                     <div class="form-group">
                         <label for="street" class=" form-control-label">Nome do Cliente/Empresa que você quer indicar?</label>
                         <input type="text" id="cliente" name="cliente" placeholder="Digite aqui." class="form-control">
                     </div>
-                     <div class="form-group">
-                            <label for="street" class=" form-control-label">Para qual EJ você quer indicar?</label>
-                                <select name="ej1" id="ej1" class="form-control js-example-basic-single select2-hidden-accessible" tabindex="-1" aria-hidden="true">
-                                                                 <option value="4">AEC</option>                             <option value="10">Batuque</option>                             <option value="20">Consulti</option>                             <option value="18">EJEC</option>                             <option value="3">Executive</option>                             <option value="13">I9 Engenharia</option>                             <option value="9">Jangadeiros</option>                             <option value="19">JRS Consultoria</option>                             <option value="21">Júnior Legis</option>                             <option value="16">Nortear</option>                             <option value="12">PontesJud</option>                             <option value="7">Potencialize</option>                             <option value="6">ProSigma</option>                             <option value="17">PROTEQ</option>                             <option value="14">Renotec</option>                             <option value="8">Sapiência</option>                             <option value="15">Sigma</option>                             <option value="5">TIJUC</option>                             <option value="11">Vetor</option>                             <option value="2">Vittals</option>                                                     </select><span class="select2 select2-container select2-container--default" dir="ltr" style="width: 422.5px;"><span class="selection"><span class="select2-selection select2-selection--single" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-labelledby="select2-ej1-container"><span class="select2-selection__rendered" id="select2-ej1-container" title="AEC">AEC</span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span>
-                        </div>
+                    <div class="form-group">
+                        <label for="street" class=" form-control-label ">Para qual EJ você quer indicar?</label>
+                                   <select name="ej" id="ej1" class="form-control" tabindex="-1" aria-hidden="true">
+                                       <option value="">Selecione..</option>
+                                       @foreach($ejs as $ej)
+                                           <option value="{{$ej->id}}">{{$ej->name}}</option>
+                                       @endforeach
+                                   </select>
+                           </div>
                          <label for="street" class=" form-control-label">Indicar para outras EJs?</label>
                         <label class="switch switch-3d switch-danger mr-3">
-  <input type="checkbox" class="switch-input" id="chkPassport" checked="true">
+  <input type="checkbox" class="switch-input" id="togBtn" checked="false">
   <span class="switch-label"></span>
   <span class="switch-handle"></span>
 </label>
 <div id="dvPassport">
 <div class="form-group">
-                            
-                                <select name="ej2" id="ej2" class="form-control js-example-basic-single select2-hidden-accessible" tabindex="-1" aria-hidden="true">
-                                    <option value="0">Selecione...</option>
-                                                                <option value="4">AEC</option>                             <option value="10">Batuque</option>                             <option value="20">Consulti</option>                             <option value="18">EJEC</option>                             <option value="3">Executive</option>                             <option value="13">I9 Engenharia</option>                             <option value="9">Jangadeiros</option>                             <option value="19">JRS Consultoria</option>                             <option value="21">Júnior Legis</option>                             <option value="16">Nortear</option>                             <option value="12">PontesJud</option>                             <option value="7">Potencialize</option>                             <option value="6">ProSigma</option>                             <option value="17">PROTEQ</option>                             <option value="14">Renotec</option>                             <option value="8">Sapiência</option>                             <option value="15">Sigma</option>                             <option value="5">TIJUC</option>                             <option value="11">Vetor</option>                             <option value="2">Vittals</option>                                                     </select><span class="select2 select2-container select2-container--default" dir="ltr" style="width: 422.5px;"><span class="selection"><span class="select2-selection select2-selection--single" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-labelledby="select2-ej2-container"><span class="select2-selection__rendered" id="select2-ej2-container" title="Selecione...">Selecione...</span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span>
+    <select name="ej2" id="ej2" class="form-control" tabindex="-1" aria-hidden="true">
+        <option value="">Selecione..</option>
+        @foreach($ejs as $ej)
+            <option value="{{$ej->id}}">{{$ej->name}}</option>
+        @endforeach
+    </select>
                         </div>
-                          <div class="form-group">
-                            
-                                <select name="ej3" id="ej3" class="form-control js-example-basic-single select2-hidden-accessible" tabindex="-1" aria-hidden="true">
-                                    <option value="0">Selecione...</option>
-                                                                <option value="4">AEC</option>                             <option value="10">Batuque</option>                             <option value="20">Consulti</option>                             <option value="18">EJEC</option>                             <option value="3">Executive</option>                             <option value="13">I9 Engenharia</option>                             <option value="9">Jangadeiros</option>                             <option value="19">JRS Consultoria</option>                             <option value="21">Júnior Legis</option>                             <option value="16">Nortear</option>                             <option value="12">PontesJud</option>                             <option value="7">Potencialize</option>                             <option value="6">ProSigma</option>                             <option value="17">PROTEQ</option>                             <option value="14">Renotec</option>                             <option value="8">Sapiência</option>                             <option value="15">Sigma</option>                             <option value="5">TIJUC</option>                             <option value="11">Vetor</option>                             <option value="2">Vittals</option>                                                     </select><span class="select2 select2-container select2-container--default" dir="ltr" style="width: 422.5px;"><span class="selection"><span class="select2-selection select2-selection--single" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-labelledby="select2-ej3-container"><span class="select2-selection__rendered" id="select2-ej3-container" title="Selecione...">Selecione...</span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span>
-                        </div>
-                          <div class="form-group">
-                            
-                                <select name="ej4" id="ej4" class="form-control js-example-basic-single select2-hidden-accessible" tabindex="-1" aria-hidden="true">
-                                    <option value="0">Selecione...</option>
-                                                                <option value="4">AEC</option>                             <option value="10">Batuque</option>                             <option value="20">Consulti</option>                             <option value="18">EJEC</option>                             <option value="3">Executive</option>                             <option value="13">I9 Engenharia</option>                             <option value="9">Jangadeiros</option>                             <option value="19">JRS Consultoria</option>                             <option value="21">Júnior Legis</option>                             <option value="16">Nortear</option>                             <option value="12">PontesJud</option>                             <option value="7">Potencialize</option>                             <option value="6">ProSigma</option>                             <option value="17">PROTEQ</option>                             <option value="14">Renotec</option>                             <option value="8">Sapiência</option>                             <option value="15">Sigma</option>                             <option value="5">TIJUC</option>                             <option value="11">Vetor</option>                             <option value="2">Vittals</option>                                                     </select><span class="select2 select2-container select2-container--default" dir="ltr" style="width: 422.5px;"><span class="selection"><span class="select2-selection select2-selection--single" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-labelledby="select2-ej4-container"><span class="select2-selection__rendered" id="select2-ej4-container" title="Selecione...">Selecione...</span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span>
-                        </div>
+                        <div class="form-group">
+                            <select name="ej3" id="ej3" class="form-control" tabindex="-1" aria-hidden="true">
+                                <option value="">Selecione..</option>
+                                @foreach($ejs as $ej)
+                                    <option value="{{$ej->id}}">{{$ej->name}}</option>
+                                @endforeach
+                            </select>
+                                                </div>
+                                                <div class="form-group">
+                                                    <select name="ej4" id="ej4" class="form-control" tabindex="-1" aria-hidden="true">
+                                                        <option value="">Selecione..</option>
+                                                        @foreach($ejs as $ej)
+                                                            <option value="{{$ej->id}}">{{$ej->name}}</option>
+                                                        @endforeach
+                                                    </select>
+                                                                        </div>
 </div>
                         <div class="form-group">
                                 <label for="textarea-input" class=" form-control-label">O que esse cliente precisa?</label>
@@ -154,5 +167,34 @@
         </div>
     </div>
 </div>
+@section('script')
+<script type="text/javascript">
+$(document).ready(function() {
+    $('#ej').select2({
+      placeholder: "Selecione sua EJ"
+    });
+    
+});
+$(document).ready(function() {
+    $('#ej1').select2({
+      placeholder: "Selecione uma EJ"
+    });
+    
+});
 
+var switchStatus = false;
+$("#togBtn").on('change', function() {
+    
+  var x = document.getElementById("dvPassport");
+    if ($(this).is(':checked')) {
+        switchStatus = $(this).is(':checked');
+        x.style.display = "block";
+    }
+    else {
+       switchStatus = $(this).is(':checked');
+       x.style.display = "none";
+    }
+});
+</script>
+@endsection
 @endsection
