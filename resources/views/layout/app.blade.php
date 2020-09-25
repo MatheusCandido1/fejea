@@ -156,9 +156,9 @@
 
         <!-- MENU SIDEBAR-->
         <aside class="menu-sidebar d-none d-lg-block">
-            <div class="logo">
+            <div style="background-color:#6e1112; align-items: center; justify-content: center" class="logo">
                 <a href="#">
-                    <img src="images/icon/logo.png" alt="Cool Admin" />
+                    <img src="https://cdn.shortpixel.ai/client/to_webp,q_glossy,ret_img,w_150,h_75/https://fejea.com.br/wp-content/uploads/2020/02/BRANCO-e1582372536283.png" alt="Cool Admin" />
                 </a>
             </div>
             <div class="menu-sidebar__content js-scrollbar1">
@@ -183,7 +183,7 @@
                         <div class="header-wrap">
                             <form class="form-header" action="" method="POST" >
                                 <input disabled class="au-input au-input--xl" type="text" name="search" placeholder="Em breve..." />
-                                <button class="au-btn--submit" type="submit">
+                                <button style="background-color: #00133d;" class="au-btn--submit" type="submit">
                                     <i class="zmdi zmdi-search"></i>
                                 </button>
                             </form>
@@ -191,10 +191,10 @@
                                 <div class="noti-wrap">
                                     <div class="noti__item js-item-menu">
                                         <i class="zmdi zmdi-comment-more"></i>
-                                        <span class="quantity">1</span>
+                                        <span style="background-color:#6e1112;" class="quantity" >1</span>
                                         <div class="mess-dropdown js-dropdown">
                                             <div class="mess__title">
-                                                <p>You have 2 news message</p>
+                                                <p>Você tem uma nova mensagem</p>
                                             </div>
                                             <div class="mess__item">
                                                 <div class="image img-cir img-40">
@@ -202,100 +202,67 @@
                                                 </div>
                                                 <div class="content">
                                                     <h6>Michelle Moreno</h6>
-                                                    <p>Have sent a photo</p>
-                                                    <span class="time">3 min ago</span>
+                                                    <p>Temos uma plataforma nova pra ajudar nossas EJ's a serem conectadas. Se liga!</p>
+                                                    <span class="time">3 minutos atrás</span>
                                                 </div>
-                                            </div>
-                                            <div class="mess__item">
-                                                <div class="image img-cir img-40">
-                                                    <img src="images/icon/avatar-04.jpg" alt="Diane Myers" />
-                                                </div>
-                                                <div class="content">
-                                                    <h6>Diane Myers</h6>
-                                                    <p>You are now connected on message</p>
-                                                    <span class="time">Yesterday</span>
-                                                </div>
-                                            </div>
-                                            <div class="mess__footer">
-                                                <a href="#">View all messages</a>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="noti__item js-item-menu">
                                         <i class="zmdi zmdi-email"></i>
-                                        <span class="quantity">0</span>
-                                        <div class="email-dropdown js-dropdown">
-                                            <div class="email__title">
-                                                <p>You have 3 New Emails</p>
-                                            </div>
-                                            <div class="email__item">
-                                                <div class="image img-cir img-40">
-                                                    <img src="images/icon/avatar-06.jpg" alt="Cynthia Harvey" />
-                                                </div>
-                                                <div class="content">
-                                                    <p>Meeting about new dashboard...</p>
-                                                    <span>Cynthia Harvey, 3 min ago</span>
-                                                </div>
-                                            </div>
-                                            <div class="email__item">
-                                                <div class="image img-cir img-40">
-                                                    <img src="images/icon/avatar-05.jpg" alt="Cynthia Harvey" />
-                                                </div>
-                                                <div class="content">
-                                                    <p>Meeting about new dashboard...</p>
-                                                    <span>Cynthia Harvey, Yesterday</span>
-                                                </div>
-                                            </div>
-                                            <div class="email__item">
-                                                <div class="image img-cir img-40">
-                                                    <img src="images/icon/avatar-04.jpg" alt="Cynthia Harvey" />
-                                                </div>
-                                                <div class="content">
-                                                    <p>Meeting about new dashboard...</p>
-                                                    <span>Cynthia Harvey, April 12,,2018</span>
-                                                </div>
-                                            </div>
-                                            <div class="email__footer">
-                                                <a href="#">See all emails</a>
-                                            </div>
-                                        </div>
+                                        <span style="background-color:#6e1112;" class="quantity">0</span>
                                     </div>
                                     <div class="noti__item js-item-menu">
                                         <i class="zmdi zmdi-notifications"></i>
-                                        <span class="quantity">5</span>
+                                        <span  style="background-color:#6e1112;" class="quantity">5</span>
                                         <div class="notifi-dropdown js-dropdown">
                                             <div class="notifi__title">
-                                                <p>You have 3 Notifications</p>
+                                                <p>Você tem 5 notificações.</p>
                                             </div>
                                             <div class="notifi__item">
-                                                <div class="bg-c1 img-cir img-40">
-                                                    <i class="zmdi zmdi-email-open"></i>
+                                                <div style="background-color: #00133d;" class="bg-c1 img-cir img-40">
+                                                    <i class="fa fa-rocket"></i>
                                                 </div>
                                                 <div class="content">
-                                                    <p>You got a email notification</p>
-                                                    <span class="date">April 12, 2018 06:50</span>
-                                                </div>
-                                            </div>
-                                            <div class="notifi__item">
-                                                <div class="bg-c2 img-cir img-40">
-                                                    <i class="zmdi zmdi-account-box"></i>
-                                                </div>
-                                                <div class="content">
-                                                    <p>Your account has been blocked</p>
-                                                    <span class="date">April 12, 2018 06:50</span>
+                                                    <p>Mais Fortes</p>
+                                                    <span class="date">31 de Dezembro de 2020</span>
                                                 </div>
                                             </div>
                                             <div class="notifi__item">
-                                                <div class="bg-c3 img-cir img-40">
-                                                    <i class="zmdi zmdi-file-text"></i>
+                                                <div style="background-color: #00133d;" class="bg-c2 img-cir img-40">
+                                                    <i class="fa fa-code-fork"></i>
                                                 </div>
                                                 <div class="content">
-                                                    <p>You got a new file</p>
-                                                    <span class="date">April 12, 2018 06:50</span>
+                                                    <p>Conectados</p>
+                                                    <span class="date">31 de Dezembro de 2020</span>
                                                 </div>
                                             </div>
-                                            <div class="notifi__footer">
-                                                <a href="#">All notifications</a>
+                                            <div class="notifi__item">
+                                                <div style="background-color: #00133d;" class="bg-c3 img-cir img-40">
+                                                    <i class="fa fa-globe"></i>
+                                                </div>
+                                                <div class="content">
+                                                    <p>Em todo Brasil</p>
+                                                    <span class="date">31 de Dezembro de 2020</span>
+                                                </div>
+                                            </div>
+                                            <div class="notifi__item">
+                                                <div style="background-color: #00133d;" class="bg-c1 img-cir img-40">
+                                                    <i class="fa fa-users"></i>
+                                                </div>
+                                                <div class="content">
+                                                    <p>Formando líderes que fazem</p>
+                                                    <span class="date">31 de Dezembro de 2020</span>
+                                                </div>
+                                            </div>
+                                            <div class="notifi__item">
+                                                <div style="background-color: #00133d;" class="bg-c2 img-cir img-40">
+                                                    <i class="fa fa-plus"></i>
+                                                </div>
+                                                <div class="content">
+                                                    <p>Mais Projetos de Alto Impacto</p>
+                                                    <span class="date">31 de Dezembro de 2020</span>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
@@ -306,7 +273,7 @@
                                             <img src="images/icon/avatar-01.jpg" alt="John Doe" />
                                         </div>
                                         <div class="content">
-                                            <a class="js-acc-btn" href="#">john doe</a>
+                                            <a class="js-acc-btn" href="#">FEJEA</a>
                                         </div>
                                         <div class="account-dropdown js-dropdown">
                                             <div class="info clearfix">
