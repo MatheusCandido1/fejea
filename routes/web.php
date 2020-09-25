@@ -17,7 +17,10 @@ use App\Http\Controllers\HomeController;
 
 Route::get('/', [HomeController::class, 'index']);
 
-Route::post('/', [ConnectedController::class, 'store']);
+Route::post('/', [ConnectedController::class, 'store'])->name('connected.store');
+
+
+Route::get('/', [ConnectedController::class, 'leads'])->name('connected.leads');
 
 Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
     return view('dashboard');

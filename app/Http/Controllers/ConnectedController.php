@@ -9,6 +9,6 @@ class ConnectedController extends Controller
 {
     public function store(Request $request) {
         Connected::create($request->all());
-        return redirect()->back();
+        return redirect()->back() ->with('alert', 'Lead enviado com sucesso!');
     }
 }

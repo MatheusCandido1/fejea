@@ -60,6 +60,11 @@
                             <a href="/">
                                 <i class="fas fa-chart-bar"></i>Início</a>
                         </li>
+                        
+                        <li>
+                            <a href="/">
+                                <i class="fas fa-table"></i>Leads</a>
+                        </li>
                     </ul>
                 </div>
             </nav>
@@ -79,6 +84,10 @@
                         <li>
                             <a href="/">
                                 <i class="fas fa-home"></i>Início</a>
+                        </li>
+                        <li>
+                            <a href="/">
+                                <i class="fas fa-table"></i>Leads</a>
                         </li>
                     </ul>
                 </nav>
